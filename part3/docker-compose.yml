@@ -1,0 +1,8 @@
+ version: "3"
+ services:
+  mongo:
+    image: rabbitmq:management
+    deploy:
+      replicas: 1
+    ports:
+      - '5672:5672'
