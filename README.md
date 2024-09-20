@@ -1,8 +1,8 @@
-Project Overview
+#Project Overview
 
 This project focuses on the collection, processing, prediction, and visualization of PM2.5 data within an IoT environment. It includes collecting data from sensors, publishing the data to an edge virtual machine via the EMQX server, cleaning and calculating daily average values, and then sending the cleaned data to a cloud virtual machine for visualization and future value prediction.
 
-Key Achievements
+#Key Achievements
 
 Data Collection: Collected PM2.5 data from June 1, 2023, to August 31, 2023.
 
@@ -12,7 +12,7 @@ Machine Learning: Utilized the Prophet model for time series analysis to predict
 
 Visualization: Created charts using Matplotlib to display historical data and prediction results.
 
-Implementation Details
+#Implementation Details
 The project was implemented through the following steps:
 
 Design of Data Injection Component:
@@ -22,7 +22,7 @@ Wrote a publisher program that retrieves PM2.5 data from the Urban Observatory p
 Cleaned the data, retaining only PM2.5-related information.
 Launched the publisher program to send data to the EMQX server.
 
-Design of Data Preprocessing Operations:
+#Design of Data Preprocessing Operations:
 
 Wrote a subscriber program on the edge virtual machine to receive PM2.5 data and print it to the console.
 Cleaned the data and calculated the average PM2.5 value.
@@ -30,14 +30,14 @@ Wrote Dockerfile and docker-compose configuration files to build and run the dat
 Pulled and ran the RabbitMQ message queue service.
 Wrote a producer program to send data to the RabbitMQ server in the cloud.
 
-Time Series Data Prediction and Visualization:
+#Time Series Data Prediction and Visualization:
 
 Wrote a consumer program to retrieve data from RabbitMQ.
 Used charting tools to visualize the data stored in RabbitMQ.
 Passed the data to the machine learning component for prediction.
 Displayed the prediction results graphically.
 
-Technologies Used
+#Technologies Used
 
 Docker: For containerized deployment of components. 
 
