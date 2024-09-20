@@ -33,10 +33,15 @@ Displayed the prediction results graphically.
 Technologies Used
 
 Docker: For containerized deployment of components. 
+
 EMQX: Message queuing service supporting the MQTT protocol. 
+
 RabbitMQ: Reliable and efficient data communication between cloud and edge. 
+
 Python: Scripting language for data handling and machine learning. 
+
 Prophet: Time series prediction model. 
+
 Matplotlib: Library for data visualization. 
 
 ![PM25_data](https://github.com/user-attachments/assets/fc65ad72-6e69-42a4-916e-9e72726e7de6)
